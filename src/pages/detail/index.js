@@ -9,7 +9,7 @@ function DetailPage() {
 
 	useEffect(() => {
 		axios
-			.get(`http://localhost:3000/questions/${id}`)
+			.get(id)
 			.then(function (response) {
 				setData(response.data);
 			})
