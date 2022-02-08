@@ -1,22 +1,8 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useState } from "react";
 import Layout from "../../components/Layout";
 
 function DetailPage() {
-	const { id } = useParams();
-	const [data, setData] = useState(null);
-
-	useEffect(() => {
-		axios
-			.get(id)
-			.then(function (response) {
-				setData(response.data);
-			})
-			.catch(function (error) {
-				console.log(error);
-			});
-	}, [id]);
+	const [data] = useState(null);
 
 	return (
 		<Layout>
