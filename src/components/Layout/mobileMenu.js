@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { homeIcon, cursorIcon, shieldIcon, closeIcon } from "../../utils/icons";
 
 const MobileMenu = ({ setIsMobileMenu }) => {
@@ -32,14 +33,14 @@ const MobileMenu = ({ setIsMobileMenu }) => {
 					</div>
 				</div>
 				<div className="py-6 px-5 space-y-6">
-					<a href="#" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+					<Link to="#" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
 						Sign up
-					</a>
+					</Link>
 					<p className="mt-6 text-center text-base font-medium text-gray-500">
 						Existing customer?
-						<a href="#" className="text-indigo-600 hover:text-indigo-500">
+						<Link to="#" className="text-indigo-600 hover:text-indigo-500">
 							Sign in
-						</a>
+						</Link>
 					</p>
 				</div>
 			</div>
@@ -51,10 +52,10 @@ export default MobileMenu;
 
 function MobileNavLink(props) {
 	return (
-		<a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+		<Link to="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
 			{props.icon}
 			<span className="ml-3 text-base font-medium text-gray-900">{props.title}</span>
-		</a>
+		</Link>
 	);
 }
 

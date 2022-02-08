@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 function DropCard() {
 	return (
 		<div className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-88 px-2 w-screen max-w-md sm:px-0">
 			<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
 				<div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-					<a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+					<Link to="/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
 						<svg className="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
 							<path
 								strokeLinecap="round"
@@ -16,9 +18,9 @@ function DropCard() {
 							<p className="text-base font-medium text-gray-900">Help Center</p>
 							<p className="mt-1 text-sm text-gray-500">Get all of your questions answered in our forums or contact support.</p>
 						</div>
-					</a>
+					</Link>
 
-					<a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+					<Link to="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
 						<svg className="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
 						</svg>
@@ -26,9 +28,9 @@ function DropCard() {
 							<p className="text-base font-medium text-gray-900">Guides</p>
 							<p className="mt-1 text-sm text-gray-500">Learn how to maximize our platform to get the most out of it.</p>
 						</div>
-					</a>
+					</Link>
 
-					<a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+					<Link to="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
 						<svg className="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
 							<path
 								strokeLinecap="round"
@@ -41,7 +43,7 @@ function DropCard() {
 							<p className="text-base font-medium text-gray-900">Security</p>
 							<p className="mt-1 text-sm text-gray-500">Understand how we take your privacy seriously.</p>
 						</div>
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>
