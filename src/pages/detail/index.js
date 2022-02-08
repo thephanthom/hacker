@@ -16,7 +16,7 @@ function DetailPage() {
 			.catch(function (error) {
 				console.log(error);
 			});
-	}, []);
+	}, [id]);
 
 	return (
 		<Layout>
